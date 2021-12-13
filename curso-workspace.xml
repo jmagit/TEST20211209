@@ -3,6 +3,8 @@
   <con:settings/>
   <con:project name="CalcInteger">D:/Cursos/Testing/TEST20211209/CalcInteger-soapui-project.xml</con:project>
   <con:project name="CalcDouble">D:/Cursos/Testing/TEST20211209/CalcDouble-soapui-project.xml</con:project>
-  <con:project name="sample-service">D:/Cursos/Testing/TEST20211209/sample-service-rest-soapui-project.xml</con:project>
+  <con:project name="sample-service-rest">D:/Cursos/Testing/TEST20211209/sample-service-rest-soapui-project.xml</con:project>
+  <con:project name="REST a Mano">D:/Cursos/Testing/TEST20211209/REST-a-Mano-soapui-project.xml</con:project>
+  <con:project name="Mascotas">D:/Cursos/Testing/TEST20211209/Mascotas-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>

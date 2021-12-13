@@ -32,3 +32,19 @@ SOAPAction: "http://tempuri.org/Subtract"
   </soap:Body>
 </soap:Envelope>
 
+###
+
+GET https://petstore.swagger.io/v2/pet/31662904
+Accept: application/json
+###
+
+GET https://petstore.swagger.io/v2/pet/31662904
+Accept: text/xml
+###
+
+GET https://petstore.swagger.io/v2/pet/31662904
+Accept: application/xml
+###
+
+GET https://petstore.swagger.io/v2/pet/31662904
+Accept: text/plain
