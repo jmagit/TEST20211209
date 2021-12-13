@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="6431e900-a4c9-4dfe-a13d-f56283f491b6" activeEnvironment="Default" name="CalcDouble" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ProjectSettings@shadowPassword"/></con:settings><con:interface xsi:type="con:WsdlInterface" id="9d864d29-f66a-46c9-843e-345c036717b6" wsaVersion="NONE" name="calc" type="wsdl" bindingName="{http://websrv.cs.fsu.edu/~engelen/calc.wsdl}calc" soapVersion="1_1" anonymous="optional" definition="https://www.genivia.com/examples/calc/calc.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://www.genivia.com/examples/calc/calc.wsdl"><con:part><con:url>https://www.genivia.com/examples/calc/calc.wsdl</con:url><con:content><![CDATA[<definitions name="calc" targetNamespace="http://websrv.cs.fsu.edu/~engelen/calc.wsdl" xmlns:tns="http://websrv.cs.fsu.edu/~engelen/calc.wsdl" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns="urn:calc" xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:HTTP="http://schemas.xmlsoap.org/wsdl/http/" xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/" xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema targetNamespace="urn:calc" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    </schema>
+  </types>
+  <message name="addRequest">
+    <part name="a" type="xsd:double"/>
+    <!--ns__add::a-->
+    <part name="b" type="xsd:double"/>
+    <!--ns__add::b-->
+  </message>
+  <message name="addResponse">
+    <part name="result" type="xsd:double"/>
+    <!--ns__add::result-->
+  </message>
+  <message name="subRequest">
+    <part name="a" type="xsd:double"/>
+    <!--ns__sub::a-->
+    <part name="b" type="xsd:double"/>
+    <!--ns__sub::b-->
+  </message>
+  <message name="subResponse">
+    <part name="result" type="xsd:double"/>
+    <!--ns__sub::result-->
+  </message>
+  <message name="mulRequest">
+    <part name="a" type="xsd:double"/>
+    <!--ns__mul::a-->
+    <part name="b" type="xsd:double"/>
+    <!--ns__mul::b-->
+  </message>
+  <message name="mulResponse">
+    <part name="result" type="xsd:double"/>
+    <!--ns__mul::result-->
+  </message>
+  <message name="divRequest">
+    <part name="a" type="xsd:double"/>
+    <!--ns__div::a-->
+    <part name="b" type="xsd:double"/>
+    <!--ns__div::b-->
+  </message>
+  <message name="divResponse">
+    <part name="result" type="xsd:double"/>
+    <!--ns__div::result-->
+  </message>
+  <message name="powRequest">
+    <part name="a" type="xsd:double"/>
+    <!--ns__pow::a-->
+    <part name="b" type="xsd:double"/>
+    <!--ns__pow::b-->
+  </message>
+  <message name="powResponse">
+    <part name="result" type="xsd:double"/>
+    <!--ns__pow::result-->
+  </message>
+  <portType name="calcPortType">
+    <operation name="add">
+      <documentation>Sums two values</documentation>
+      <input message="tns:addRequest"/>
+      <output message="tns:addResponse"/>
+    </operation>
+    <operation name="sub">
+      <documentation>Subtracts two values</documentation>
+      <input message="tns:subRequest"/>
+      <output message="tns:subResponse"/>
+    </operation>
+    <operation name="mul">
+      <documentation>Multiplies two values</documentation>
+      <input message="tns:mulRequest"/>
+      <output message="tns:mulResponse"/>
+    </operation>
+    <operation name="div">
+      <documentation>Divides two values</documentation>
+      <input message="tns:divRequest"/>
+      <output message="tns:divResponse"/>
+    </operation>
+    <operation name="pow">
+      <documentation>Raises a to b</documentation>
+      <input message="tns:powRequest"/>
+      <output message="tns:powResponse"/>
+    </operation>
+  </portType>
+  <binding name="calc" type="tns:calcPortType">
+    <SOAP:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="add">
+      <SOAP:operation style="rpc" soapAction=""/>
+      <input>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+    <operation name="sub">
+      <SOAP:operation style="rpc" soapAction=""/>
+      <input>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+    <operation name="mul">
+      <SOAP:operation style="rpc" soapAction=""/>
+      <input>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+    <operation name="div">
+      <SOAP:operation style="rpc" soapAction=""/>
+      <input>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+    <operation name="pow">
+      <SOAP:operation style="rpc" soapAction=""/>
+      <input>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <SOAP:body use="encoded" namespace="urn:calc" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="calc">
+    <documentation>Simple calculator service described at https://www.genivia.com/dev.html</documentation>
+    <port name="calc" binding="tns:calc">
+      <SOAP:address location="http://websrv.cs.fsu.edu/~engelen/calcserver.cgi"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://websrv.cs.fsu.edu/~engelen/calcserver.cgi</con:endpoint></con:endpoints><con:operation id="339833ed-f3ed-4e88-9e78-168c74845ca2" isOneWay="false" action="" name="add" bindingOperationName="add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cbfd301d-9744-4912-9245-ac46567eb24a" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://websrv.cs.fsu.edu/~engelen/calcserver.cgi</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:calc">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:add soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <a xsi:type="xsd:double">2.0</a>\r
+         <b xsi:type="xsd:double">2.5</b>\r
+      </urn:add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>usr1</con:username><con:password>kk</con:password><con:domain>kk</con:domain><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://websrv.cs.fsu.edu/~engelen/calc.wsdl/calcPortType/addRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="b0861574-bfec-4c36-9a39-2faef1a53f47" isOneWay="false" action="" name="div" bindingOperationName="div" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c0516279-07dc-4bf1-bba2-5093e8e8bfc5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://websrv.cs.fsu.edu/~engelen/calcserver.cgi</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:calc">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:div soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <a xsi:type="xsd:double">?</a>\r
+         <b xsi:type="xsd:double">?</b>\r
+      </urn:div>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://websrv.cs.fsu.edu/~engelen/calc.wsdl/calcPortType/divRequest"/></con:call></con:operation><con:operation id="27fe6581-fdaa-4178-97c0-ef631f7cc326" isOneWay="false" action="" name="mul" bindingOperationName="mul" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9a09d81d-6ef3-48f2-b6f7-5d6a8cefad7d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://websrv.cs.fsu.edu/~engelen/calcserver.cgi</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:calc">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:mul soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <a xsi:type="xsd:double">?</a>\r
+         <b xsi:type="xsd:double">?</b>\r
+      </urn:mul>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://websrv.cs.fsu.edu/~engelen/calc.wsdl/calcPortType/mulRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9a411224-eb4f-4c0d-9a8f-f946d3a506b9" isOneWay="false" action="" name="pow" bindingOperationName="pow" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="51df23d5-b969-47e8-9111-54a3826da008" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://websrv.cs.fsu.edu/~engelen/calcserver.cgi</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:calc">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:pow soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <a xsi:type="xsd:double">3</a>\r
+         <b xsi:type="xsd:double">0</b>\r
+      </urn:pow>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://websrv.cs.fsu.edu/~engelen/calc.wsdl/calcPortType/powRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3f2144c5-4036-4283-95f4-e661cc9b638d" isOneWay="false" action="" name="sub" bindingOperationName="sub" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8e39b9da-64ad-436f-8020-0fa1f1b3bd7b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://websrv.cs.fsu.edu/~engelen/calcserver.cgi</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:calc">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urn:sub soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <a xsi:type="xsd:double">?</a>\r
+         <b xsi:type="xsd:double">?</b>\r
+      </urn:sub>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://websrv.cs.fsu.edu/~engelen/calc.wsdl/calcPortType/subRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="Projects" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="Sample Google Maps Project">D:/Cursos/Testing/SoapUI-Tutorials/popular-apis/Google-Maps-soapui-project.xml</con:project>
+  <con:project name="CalcInteger">D:/Cursos/Testing/TEST20211209/CalcInteger-soapui-project.xml</con:project>
+  <con:project name="CalcDouble">D:/Cursos/Testing/TEST20211209/CalcDouble-soapui-project.xml</con:project>
+  <con:project name="sample-service">D:/Cursos/Testing/TEST20211209/sample-service-rest-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
