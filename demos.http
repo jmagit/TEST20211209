@@ -48,3 +48,24 @@ Accept: application/xml
 
 GET https://petstore.swagger.io/v2/pet/31662904
 Accept: text/plain
+
+###
+
+POST http://www.dneonline.com/calculator.asmx HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: "http://tempuri.org/Add"
+Content-Length: 293
+Host: www.dneonline.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Add>
+         <tem:intA>2.5</tem:intA>
+         <tem:intB>2</tem:intB>
+      </tem:Add>
+   </soapenv:Body>
+</soapenv:Envelope>
