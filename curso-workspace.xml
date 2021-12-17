@@ -7,5 +7,6 @@
   <con:project status="CLOSED" name="REST a Mano">D:/Cursos/Testing/TEST20211209/REST-a-Mano-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="Mascotas">D:/Cursos/Testing/TEST20211209/Mascotas-soapui-project.xml</con:project>
   <con:project name="Contactos">D:/Cursos/Testing/TEST20211209/Contactos-soapui-project.xml</con:project>
+  <con:project name="Simulacion">D:/Cursos/Testing/TEST20211209/Simulacion-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
