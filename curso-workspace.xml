@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="Projects" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="CalcInteger">D:/Cursos/Testing/TEST20211209/CalcInteger-soapui-project.xml</con:project>
-  <con:project name="CalcDouble">D:/Cursos/Testing/TEST20211209/CalcDouble-soapui-project.xml</con:project>
+  <con:project status="CLOSED" name="CalcInteger">D:/Cursos/Testing/TEST20211209/CalcInteger-soapui-project.xml</con:project>
+  <con:project status="CLOSED" name="CalcDouble">D:/Cursos/Testing/TEST20211209/CalcDouble-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="sample-service-rest">D:/Cursos/Testing/TEST20211209/sample-service-rest-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="REST a Mano">D:/Cursos/Testing/TEST20211209/REST-a-Mano-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="Mascotas">D:/Cursos/Testing/TEST20211209/Mascotas-soapui-project.xml</con:project>
-  <con:project name="Contactos">D:/Cursos/Testing/TEST20211209/Contactos-soapui-project.xml</con:project>
-  <con:project name="Simulacion">D:/Cursos/Testing/TEST20211209/Simulacion-soapui-project.xml</con:project>
+  <con:project status="CLOSED" name="Contactos">D:/Cursos/Testing/TEST20211209/Contactos-soapui-project.xml</con:project>
+  <con:project status="CLOSED" name="Simulacion">D:/Cursos/Testing/TEST20211209/Simulacion-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
